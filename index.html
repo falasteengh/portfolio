@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Falasteen Ghaith | Portfolio</title>
+
+<style>
+/* ===== Base ===== */
+body{
+  font-family: Arial, sans-serif;
+  margin:0;
+  background:#f9f9f9;
+  color:#333;
+}
+section{
+  max-width:1100px;
+  margin:auto;
+  padding:40px 20px;
+}
+h2{
+  text-align:center;
+  margin-bottom:30px;
+  border-bottom:2px solid #ddd;
+  padding-bottom:10px;
+  font-size:28px;
+}
+
+/* ===== Hero ===== */
+.hero{
+  background:#f48fb1;
+  color:white;
+  text-align:center;
+  padding:60px 20px;
+}
+.hero h1{margin:0;font-size:45px;}
+.hero p{font-size:20px;opacity:0.9;}
+
+/* ===== Skills ===== */
+.skills ul{
+  list-style:none;
+  padding:0;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:15px;
+}
+.skill-item{
+  background:white;
+  padding:15px;
+  text-align:center;
+  border-radius:8px;
+  cursor:pointer;
+  box-shadow:0 2px 8px rgba(0,0,0,.1);
+  transition:.3s;
+}
+.skill-item:hover{
+  transform:scale(1.05);
+  box-shadow:0 0 20px #f48fb1;
+  color:#f48fb1;
+}
+
+/* ===== Gallery ===== */
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+}
+
+/* Gallery Card */
+.gallery-item{
+  background:white;
+  border-radius:12px;
+  padding:10px;
+  cursor:pointer;
+  box-shadow:0 2px 10px rgba(0,0,0,.1);
+  transition:.3s;
+  text-align:center;
+}
+
+/* Images */
+.gallery-item img{
+  width:100%;
+  height:180px;
+  object-fit:contain; /* 👈 يبيّن الصورة كاملة */
+  background:#fff;
+  border-radius:8px;
+  transition:.3s;
+}
+
+.gallery-item:hover{
+  transform:translateY(-5px);
+}
+
+/* Title */
+.gallery-item span{
+  display:block;
+  margin-top:8px;
+  font-weight:bold;
+  font-size:14px;
+}
+
+/* ===== Lightbox ===== */
+#lightbox{
+  display:none;
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.9);
+  justify-content:center;
+  align-items:center;
+  z-index:1000;
+}
+#lightbox img{
+  max-width:90%;
+  max-height:90%;
+  box-shadow:0 0 40px rgba(244,143,177,.6);
+  border-radius:10px;
+}
+#lightbox .close{
+  position:absolute;
+  top:20px;
+  right:30px;
+  font-size:45px;
+  color:white;
+  cursor:pointer;
+  font-weight:bold;
+}
+
+/* ===== Files ===== */
+.files{
+  text-align:center;
+}
+.files a{
+  display:inline-block;
+  margin:10px;
+  padding:12px 25px;
+  background:#f48fb1;
+  color:white;
+  text-decoration:none;
+  border-radius:8px;
+  font-weight:bold;
+  transition:.3s;
+}
+.files a:hover{
+  background:#f06292;
+}
+
+/* ===== Footer ===== */
+footer{
+  text-align:center;
+  padding:20px;
+  background:#eee;
+  margin-top:40px;
+  font-size:14px;
+}
+</style>
+</head>
+
+<body>
+
+<header class="hero">
+<h1>Falasteen Ghaith</h1>
+<p>Multimedia</p>
+</header>
+
+<section>
+<h2>About Me</h2>
+<p>
+I have studied multimedia, and I am skilled in graphic design, hand and digital drawing, animation, simple game programming, and simple website design.
+</p>
+</section>
+
+<section class="skills">
+<h2>Skills</h2>
+<ul>
+<li class="skill-item">Photoshop</li>
+<li class="skill-item">Illustrator</li>
+<li class="skill-item">CorelDRAW</li>
+<li class="skill-item">Hand-drawn and digital drawing</li>
+<li class="skill-item">Canva</li>
+<li class="skill-item">Animation</li>
+<li class="skill-item">C++ / Python / C#</li>
+<li class="skill-item">Web Design</li>
+</ul>
+</section>
+
+<section>
+<h2>Images</h2>
+<div class="gallery">
+<div class="gallery-item"><img src="D1.jpg"><span>Hand drawing</span></div>
+<div class="gallery-item"><img src="d.jpg"><span>Photoshop</span></div>
+<div class="gallery-item"><img src="prop1.jpg"><span>Photoshop</span></div>
+<div class="gallery-item"><img src="oil.jpg"><span>Photoshop-Oil painting</span></div>
+<div class="gallery-item"><img src="pro1.jpg"><span>Blender</span></div>
+<div class="gallery-item"><img src="pro2.jpg"><span>Blender</span></div>
+<div class="gallery-item"><img src="pro3.jpg"><span>Blender</span></div>
+<div class="gallery-item"><img src="pro5.jpg"><span>Blender</span></div>
+<div class="gallery-item"><img src="pro6.jpg"><span>Blender</span></div>
+<div class="gallery-item"><img src="Untitled.jpg"><span>Blender</span></div>
+<div class="gallery-item"><img src="q1.jpg"><span>Blender</span></div>
+<div class="gallery-item"><img src="project2d2.jpg"><span>Illustrator</span></div>
+<div class="gallery-item"><img src="PROJECT2D1.jpg"><span>Illustrator</span></div>
+
+</div>
+</section>
+
+<section>
+<h2>Emotes for Twitch</h2>
+<div class="gallery">
+<div class="gallery-item"><img src="Take.png"><span>Emote</span></div>
+<div class="gallery-item"><img src="f.png"><span>Emote</span></div>
+<div class="gallery-item"><img src="f1.png"><span>Emote</span></div>
+<div class="gallery-item"><img src="f2.png"><span>Emote</span></div>
+<div class="gallery-item"><img src="f3.png"><span>Emote</span></div>
+<div class="gallery-item"><img src="f4.png"><span>Emote</span></div>
+<div class="gallery-item"><img src="f6.png"><span>Emote</span></div>
+<div class="gallery-item"><img src="f7.png"><span>Emote</span></div>
+</div>
+</section>
+
+<section class="files">
+<h2>Files</h2>
+<a href="promaga.pdf" target="_blank">My Magazine (PDF)</a>
+<a href="files/portfolio.pdf" target="_blank">Portfolio PDF</a>
+</section>
+
+<footer>© 2026 Falasteen Ghaith</footer>
+
+<div id="lightbox">
+<span class="close">&times;</span>
+<img id="lb-img">
+</div>
+
+<script>
+const images=document.querySelectorAll('.gallery-item img');
+const lightbox=document.getElementById('lightbox');
+const lbImg=document.getElementById('lb-img');
+const close=document.querySelector('.close');
+
+images.forEach(img=>{
+  img.onclick=()=>{
+    lbImg.src=img.src;
+    lightbox.style.display='flex';
+  }
+});
+
+close.onclick=()=>lightbox.style.display='none';
+lightbox.onclick=e=>{
+  if(e.target===lightbox) lightbox.style.display='none';
+};
+</script>
+
+</body>
+</html>
