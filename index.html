@@ -151,6 +151,21 @@ footer{
   margin-top:40px;
   font-size:14px;
 }
+.foof{
+    color: black;
+    size: 20px;
+}
+.instagram-link svg {
+  width: 50px;       /* حجم الأيقونة */
+  height: 50px;
+  fill: #f48fb1;     /* اللون الأساسي */
+  transition: transform 0.3s, fill 0.3s;
+}
+
+.instagram-link:hover svg {
+  transform: scale(1.2);   /* يكبر عند المرور */
+  fill: #ff69b4;            /* يتوهج بلون وردي عند المرور */
+}
 </style>
 </head>
 
@@ -159,6 +174,7 @@ footer{
 <header class="hero">
 <h1>Falasteen Ghaith</h1>
 <p>Multimedia</p>
+
 </header>
 
 <section>
@@ -179,13 +195,13 @@ I have studied multimedia, and I am skilled in graphic design, hand and digital 
 <li class="skill-item">Animation</li>
 <li class="skill-item">C++ / Python / C#</li>
 <li class="skill-item">Web Design</li>
+<li class="skill-item">Simple Game Programming</li>
 </ul>
 </section>
 
 <section>
 <h2>Images</h2>
 <div class="gallery">
-<div class="gallery-item"><img src="D1.jpg"><span>Hand drawing</span></div>
 <div class="gallery-item"><img src="d.jpg"><span>Photoshop</span></div>
 <div class="gallery-item"><img src="prop1.jpg"><span>Photoshop</span></div>
 <div class="gallery-item"><img src="oil.jpg"><span>Photoshop-Oil painting</span></div>
@@ -198,6 +214,12 @@ I have studied multimedia, and I am skilled in graphic design, hand and digital 
 <div class="gallery-item"><img src="q1.jpg"><span>Blender</span></div>
 <div class="gallery-item"><img src="project2d2.jpg"><span>Illustrator</span></div>
 <div class="gallery-item"><img src="PROJECT2D1.jpg"><span>Illustrator</span></div>
+<div class="gallery-item"><img src="yout.png"><span>canva</span></div>
+<div class="gallery-item"><img src="n.png"><span>canva</span></div>
+<div class="gallery-item"><img src="n1.png"><span>canva</span></div>
+<div class="gallery-item"><img src="n2.png"><span>canva</span></div>
+<div class="gallery-item"><img src="n3.png"><span>logo</span></div>
+<div class="gallery-item"><img src="cover.webp"><span>Book cover</span></div>
 
 </div>
 </section>
@@ -218,9 +240,18 @@ I have studied multimedia, and I am skilled in graphic design, hand and digital 
 
 <section class="files">
 <h2>Files</h2>
-<a href="promaga.pdf" target="_blank">My Magazine (PDF)</a>
-<a href="files/portfolio.pdf" target="_blank">Portfolio PDF</a>
+<a href="promaga.pdf" target="_blank">MMagazine (PDF)</a>
 </section>
+<section class="contact">
+  <h2>Contact me</h2>
+  <p class="instagram-link ">
+    <a href="https://instagram.com/falasteenghaithh" target="_blank">
+      <i class="fa-brands fa-instagram"></i>
+      falasteenghaithh
+    </a>
+  </p>
+</section>
+
 
 <footer>© 2026 Falasteen Ghaith</footer>
 
@@ -247,6 +278,10 @@ lightbox.onclick=e=>{
   if(e.target===lightbox) lightbox.style.display='none';
 };
 </script>
+
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 </body>
 </html>
