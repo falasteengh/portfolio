@@ -5,7 +5,7 @@
 <title>Falasteen Ghaith | Portfolio</title>
 
 <style>
-/* ===== Base ===== */
+
 body{
   font-family: Arial, sans-serif;
   margin:0;
@@ -25,7 +25,7 @@ h2{
   font-size:28px;
 }
 
-/* ===== Hero ===== */
+
 .hero{
   background:#f48fb1;
   color:white;
@@ -35,7 +35,7 @@ h2{
 .hero h1{margin:0;font-size:45px;}
 .hero p{font-size:20px;opacity:0.9;}
 
-/* ===== Skills ===== */
+
 .skills ul{
   list-style:none;
   padding:0;
@@ -58,14 +58,13 @@ h2{
   color:#f48fb1;
 }
 
-/* ===== Gallery ===== */
 .gallery{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
   gap:20px;
 }
 
-/* Gallery Card */
+
 .gallery-item{
   background:white;
   border-radius:12px;
@@ -76,15 +75,30 @@ h2{
   text-align:center;
 }
 
-/* Images */
+
 .gallery-item img{
   width:100%;
   height:180px;
-  object-fit:contain; /* 👈 يبيّن الصورة كاملة */
+  object-fit:contain;
   background:#fff;
   border-radius:8px;
   transition:.3s;
 }
+.center-title{
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.title-box{
+ 
+  color: rgb(0, 0, 0);
+  padding: 14px 32px;
+  border-radius: 14px;
+  font-size: 36px;     
+  font-weight: bold;
+  box-shadow: 0 0 20px rgba(244,143,177,0.6);
+}
+
 
 .gallery-item:hover{
   transform:translateY(-5px);
@@ -151,6 +165,12 @@ footer{
   margin-top:40px;
   font-size:14px;
 }
+.title-box{
+  font-size: 44px;
+  padding: 18px 40px;
+  letter-spacing: 1px;
+}
+
 
 </style>
 </head>
@@ -176,6 +196,7 @@ I have studied multimedia, and I am skilled in graphic design, hand and digital 
 <li class="skill-item">Photoshop</li>
 <li class="skill-item">Illustrator</li>
 <li class="skill-item">CorelDRAW</li>
+<li class="skill-item">Blender(3d)</li>
 <li class="skill-item">Hand-drawn and digital drawing</li>
 <li class="skill-item">Canva</li>
 <li class="skill-item">Animation</li>
@@ -184,10 +205,14 @@ I have studied multimedia, and I am skilled in graphic design, hand and digital 
 <li class="skill-item">Simple Game Programming</li>
 </ul>
 </section>
+<div class="center-title">
+  <h2 class="title-box">My Works</h2>
+</div>
 
 <section>
 <h2>Images</h2>
 <div class="gallery">
+<div class="gallery-item"><img src="ma.jpg"><span>Photoshop</span></div>
 <div class="gallery-item"><img src="d.jpg"><span>Photoshop</span></div>
 <div class="gallery-item"><img src="prop1.jpg"><span>Photoshop</span></div>
 <div class="gallery-item"><img src="oil.jpg"><span>Photoshop-Oil painting</span></div>
@@ -195,7 +220,7 @@ I have studied multimedia, and I am skilled in graphic design, hand and digital 
 <div class="gallery-item"><img src="pro2.jpg"><span>Blender</span></div>
 <div class="gallery-item"><img src="pro3.jpg"><span>Blender</span></div>
 <div class="gallery-item"><img src="pro5.jpg"><span>Blender</span></div>
-<div class="gallery-item"><img src="pro6.jpg"><span>Blender</span></div>
+<div class="gallery-item"><img src="pro4.jpg"><span>Blender</span></div>
 <div class="gallery-item"><img src="Untitled.jpg"><span>Blender</span></div>
 <div class="gallery-item"><img src="q1.jpg"><span>Blender</span></div>
 <div class="gallery-item"><img src="project2d2.jpg"><span>Illustrator</span></div>
@@ -225,7 +250,7 @@ I have studied multimedia, and I am skilled in graphic design, hand and digital 
 </section>
 
 <section class="files">
-<h2>Files</h2>
+<h2>Files-InDesign</h2>
 <a href="promaga.pdf" target="_blank">MMagazine (PDF)</a>
 </section>
 <section class="contact">
